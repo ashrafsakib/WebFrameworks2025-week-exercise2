@@ -5,7 +5,6 @@ import { CourseData } from './App';
 interface CourseListProps {
   courses: CourseData[];
 }
-
 const CourseList: React.FC<CourseListProps> = ({ courses }) => {
   return (
     <div>

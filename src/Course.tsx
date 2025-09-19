@@ -5,7 +5,6 @@ interface CourseProps {
   courseId: string;
   studentPositions: number;
 }
-
 const Course: React.FC<CourseProps> = ({ name, courseId, studentPositions }) => {
   return (
     <div className="course" style={{
