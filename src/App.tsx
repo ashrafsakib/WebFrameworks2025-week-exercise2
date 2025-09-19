@@ -1,12 +1,20 @@
 import './App.css'
+import React from 'react';
+import CourseList from './CourseList';
 
-function App() {
-
-  return (
-    <>
-      <div>Week exercise 2 - Read README.md for instructions</div>
-    </>
-  )
+export interface CourseData {
+  name: string;
+  courseId: string;
+  studentPositions: number;
 }
 
-export default App
+const App: React.FC<{ courses: CourseData[] }> = ({ courses }) => {
+  return (
+    <div className="App">
+      <CourseList courses={courses} />
+    </div>
+  );
+};
+
+export default App;
+
